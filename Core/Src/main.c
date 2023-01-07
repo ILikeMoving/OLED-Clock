@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "gpio.h"
 #include "soft_iic.h"
 #include "oled.h"
 #include "draw_rolling_clock.h"
@@ -85,12 +86,12 @@ int main(void)
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
-  //MX_GPIO_Init();
+  MX_GPIO_Init();
   Soft_IIC_Init();
   OLED_Init();
   /* USER CODE BEGIN 2 */
   
-  OLED_IntensityControl(50);                //фад╩аа╤х╣В╫з
+  OLED_IntensityControl(50);                //ц├ц│ц└б╩ц│ц│б╤ц┬б╣ц╥б╫ц 
 
   /* USER CODE END 2 */
 
